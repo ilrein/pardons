@@ -9,8 +9,15 @@ ready = function() {
     anchors: ['page1', 'page2', 'page3'],
     sectionsColor: ['red', 'white', 'blue'],
     loopTop: true,
-    loopBottom: true
+    loopBottom: true,
+    navigation: {
+      'bulletsColor': '#000',
+      'position': 'right',
+      'tooltips': ['intro', 'test', 'test']
+    }
   });
+
+
 }
 
 $(document).ready(ready);

@@ -19,6 +19,7 @@ gem 'stripe'
 gem 'devise'
 gem 'quiet_assets'
 gem 'thin'
+gem 'awesome_print', group: :development
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
