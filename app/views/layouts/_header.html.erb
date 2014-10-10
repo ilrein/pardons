@@ -1,7 +1,7 @@
 <div id="header" class="ui fixed transparent inverted main menu">
   <div class="container">
     <a class="launch item">
-      <b>SaaS</b>
+      SaaS
     </a>
     <% if current_user || user_signed_in? %>
     <%= link_to destroy_user_session_path, html_options = {method: :delete } do %>
