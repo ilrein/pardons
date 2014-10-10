@@ -3,11 +3,11 @@ var ready;
 ready = function() {
 
   //pagepiling init code
-  
+
   $('#pagepiling').pagepiling({
-    menu: '#menu',
+    menu: '#pagepiling_menu',
     anchors: ['page1', 'page2', 'page3'],
-    sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],
+    sectionsColor: ['red', 'white', 'blue'],
     loopTop: true,
     loopBottom: true
   });
