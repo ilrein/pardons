@@ -1,20 +1,29 @@
-<div class="ui fixed transparent inverted main menu">
+<div id="header" class="ui fixed transparent inverted main menu">
   <div class="container">
     <a class="launch item">
-      <i class="icon list layout"></i>
-      Logo
+      <b>SaaS</b>
     </a>
-    <div class="right title item">
-      <b>Login</b>
+    <% if current_user || user_signed_in? %>
+    <%= link_to destroy_user_session_path, html_options = {method: :delete } do %>
+    <div class="ui right item" id='login'>
+      <div class='text'>Logout</div>
     </div>
-    <div class="right item">
-      <b>item 2</b>
+    <% end %>
+    <% else %>
+    <%= link_to new_user_session_path do %>
+    <div class="ui right item" id='login'>
+      <div class='text'>Login</div>
     </div>
-    <div class="right item">
-      <b>item 1</b>
-    </div>
-    
-    
+    <% end %>
+    <% end %>    
+    <a class="right item">
+      <%= semantic_icon(:comment) %>
+      Testimonials
+    </a>
+    <a class="right item">
+      <%= semantic_icon(:wrench) %>
+      How it Works
+    </a>
   </div>
 </div>
 </div>

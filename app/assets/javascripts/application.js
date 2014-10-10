@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require jquery.pagepiling.min
 //= require semantic-ui
+//= require vex.combined.min
 //= require turbolinks
 //= require_tree .

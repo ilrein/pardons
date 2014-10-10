@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root 'home#index'
   get 'home/index'
 
   devise_for :users, :controllers => { :registrations => 'users'}
@@ -7,7 +8,7 @@ Rails.application.routes.draw do
   get 'plans/index'
   get 'plans/show'
 
-  root 'charges#new'
+  get 'charges/new'
 
   resources :charges
 

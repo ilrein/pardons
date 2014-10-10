@@ -2,6 +2,10 @@ var ready;
 
 ready = function() {
 
+  // vex
+
+  vex.defaultOptions.className = 'vex-theme-os';
+
   //pagepiling init
 
   $('#pagepiling').pagepiling({
@@ -17,7 +21,7 @@ ready = function() {
     }
   });
 
-  //$('#header').sidebar('show');
+  $('#header').sidebar();
 
 }
 
