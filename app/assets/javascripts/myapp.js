@@ -2,12 +2,12 @@ var ready;
 
 ready = function() {
 
-  //pagepiling init code
+  //pagepiling init
 
   $('#pagepiling').pagepiling({
     menu: '#pagepiling_menu',
     anchors: ['page1', 'page2', 'page3'],
-    sectionsColor: ['red', 'white', 'blue'],
+    sectionsColor: ['#007148', '#60A859', '#9BDA6A'],
     loopTop: true,
     loopBottom: true,
     navigation: {
@@ -17,6 +17,7 @@ ready = function() {
     }
   });
 
+  //$('#header').sidebar('show');
 
 }
 
