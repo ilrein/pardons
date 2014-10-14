@@ -11,13 +11,13 @@ ready = function() {
   $('#pagepiling').pagepiling({
     menu: '#pagepiling_menu',
     anchors: ['page1', 'page2', 'page3'],
-    sectionsColor: ['#000', '#60A859', '#9BDA6A'],
+    sectionsColor: ['#000', '#DDE6F6', '#000'],
     loopTop: true,
     loopBottom: true,
     navigation: {
       'bulletsColor': '#fff',
       'position': 'right',
-      'tooltips': ['intro', 'test', 'test']
+      'tooltips': ['Intro', 'How it Works', 'test']
     }
   });
 
