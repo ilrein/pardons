@@ -6,13 +6,38 @@ body > div.ui.sidebar {
   z-index:1000;
 }
 
+#seethrough {
+  opacity: 0.8;
+}
+
+.the_sell {
+  color: white;
+}
+
+.super_title {
+  font-size: 250%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.sidekick_caption {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+#signupbutton {
+  position:relative;
+}
+
 #section1 {
-  text-align:center;
+  background: url("blunt.jpg") no-repeat center center fixed;  
 }
 
-#my_section {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+#centered {
+  text-align: center;
 }
 
+#logo {
+  display: inline-block;
+}
