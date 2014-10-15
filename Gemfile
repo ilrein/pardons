@@ -21,6 +21,9 @@ gem 'quiet_assets'
 gem 'thin'
 gem 'awesome_print', group: :development
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
+gem 'rails_12factor'
+
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
