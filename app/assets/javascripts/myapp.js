@@ -21,8 +21,18 @@ ready = function() {
 
   $('#header').sidebar();
 
-  $('#super_title')
+  var caption = $('.sidekick_caption');
+  var tl1 = new TimelineLite();
+  //tl1.add(TweenLite.to(caption, 1, {textDecoration:"underline", ease:Elastic.easeOut}));
 
+  caption.on('mouseenter', function(){
+    tl1.play();
+  });
+
+  caption.on('mouseleave', function(){
+    tl1.reverse();
+  });
+  
 }
 
 $(document).ready(ready);

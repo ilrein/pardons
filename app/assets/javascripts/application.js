@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.pagepiling.min
+//= require_tree ../../../vendor/assets/javascripts/.
 //= require semantic-ui
 //= require turbolinks
 //= require_tree .

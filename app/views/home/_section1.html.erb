@@ -1,9 +1,25 @@
 <div class="ui three column grid">
   <div class="column">
   </div>
-  <div id="centered" class="column the_sell ">
+  <div id="centered" class="column the_sell">
+    
     <h1 class="super_title">CLEAR YOUR CRIMINAL RECORD</h1>
-    <p class="sidekick_caption">Travel to the USA & Get Great Jobs</p><br>
+    <div class='ui small message'>
+      <%= link_to '#' do %>
+      <p class="sidekick_caption">
+        Travel to the USA
+      </p>
+      <% end %>
+      <div class="ui horizontal icon divider">
+        <i class="circular legal icon"></i>
+      </div>
+      <%= link_to '#' do %>
+      <p class="sidekick_caption">
+        Get Respectable Jobs
+      </p>
+      <% end %>
+    </div>
+    <br>
     <div id='signupbutton' class='ui huge button'>
       <%= semantic_icon(:key) %>
       Clear Now
