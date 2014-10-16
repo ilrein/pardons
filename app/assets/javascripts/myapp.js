@@ -2,7 +2,9 @@ var ready;
 
 ready = function() {
 
-  console.log();
+  // init the header
+
+  $('#header').sidebar();
 
   //pagepiling init
 
@@ -19,7 +21,17 @@ ready = function() {
     }
   });
 
-  $('#header').sidebar();
+  // add scroll functionality to header links
+
+  $('#testimonials_header').on('click', function(e){
+    e.preventDefault();
+    $.fn.pagepiling.moveTo("page3");  
+  });
+
+  $('#hiw_header').on('click', function(e){
+    e.preventDefault();
+    $.fn.pagepiling.moveTo("page2");  
+  });
 
   var caption = $('.sidekick_caption');
   var tl1 = new TimelineLite();

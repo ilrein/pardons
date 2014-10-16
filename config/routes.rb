@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'home#index'
   get 'home/index'
+  get 'home/clear_record'
 
   devise_for :users, :controllers => { :registrations => 'users'}
   
